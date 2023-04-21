@@ -1,0 +1,42 @@
+.search {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+
+  @include sm {
+    margin-bottom: 30px;
+  }
+
+  &-icon {
+    background-image: url('../../assets/svg/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    display: block;
+    flex-shrink: 0;
+    height: 30px;
+    margin-left: 10px;
+    width: 30px;
+
+    @include sm {
+      background-size: 30px 30px;
+      height: 40px;
+      margin-left: 20px;
+      width: 40px;
+    }
+  }
+
+  &-input {
+    background-color: transparent;
+    font-size: 16px;
+    border: 0;
+    margin-left: 10px;
+    outline: 0;
+    width: 100%;
+
+    @include sm {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+}

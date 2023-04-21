@@ -1,0 +1,39 @@
+.catalog {
+  display: grid;
+  row-gap: 6px;
+
+  @include sm {
+    row-gap: 8px;
+  }
+
+  @include md {
+    column-gap: 20px;
+    row-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  @include lg {
+    column-gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  }
+}
+
+.no-results {
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  height: 50vh;
+
+  @include sm {
+    font-size: 18px;
+  }
+
+  @include md {
+    font-size: 20px;
+  }
+
+  @include lg {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,18 @@
+// base
+@import "base/reset";
+
+// Utilities
+@import "utilities/variables";
+
+// Mixins
+@import "mixins/mixins";
+
+// Pages
+@import "pages/home";
+
+// Components
+@import "components/filter";
+@import "components/catalog";
+@import "components/card";
+@import "components/fav-btn";
+@import "components/link-to-top";

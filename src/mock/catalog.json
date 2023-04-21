@@ -1,0 +1,46 @@
+{
+  "brands": [
+    {
+      "id": "brand-001",
+      "name": "Abercrombie & Fitch",
+      "description": "Lifestyle retailer",
+      "logo": "abercrombie.jpg",
+      "isFav": false
+    },
+    {
+      "id": "brand-002",
+      "name": "Adidas",
+      "description": "Sportswear manufacturer",
+      "logo": "adidas.jpg",
+      "isFav": true
+    },
+    {
+      "id": "brand-003",
+      "name": "Aesop",
+      "description": "Luxury skin care",
+      "logo": "aesop.png",
+      "isFav": false
+    },
+    {
+      "id": "brand-004",
+      "name": "Aldo",
+      "description": "Shoes and accessories",
+      "logo": "aldo.png",
+      "isFav": true
+    },
+    {
+      "id": "brand-005",
+      "name": "AllSaints",
+      "description": "Fashion company",
+      "logo": "allsaints.jpg",
+      "isFav": false
+    },
+    {
+      "id": "brand-006",
+      "name": "American Vintage",
+      "description": "Lifestyle retailer",
+      "logo": "american-vintage.jpg",
+      "isFav": false
+    }
+  ]
+}

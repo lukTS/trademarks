@@ -1,0 +1,14 @@
+body {
+  background-color: $app-bg;
+  font-family: $common-font;
+}
+
+.home {
+  margin: 50px auto;
+  max-width: $width-content;
+  padding: 0 14px;
+
+  @include xl {
+    padding: 0;
+  }
+}

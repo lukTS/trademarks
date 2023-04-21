@@ -1,0 +1,162 @@
+.card {
+  background-color: $white;
+  border: 1px solid $border-grey;
+  cursor: pointer;
+  display: flex;
+  height: 132px;
+  overflow: hidden;
+  position: relative;
+
+  @include sm {
+    height: 152px;
+  }
+
+  @include md {
+    display: block;
+    padding-bottom: 140%;
+    max-width: 485px;
+    width: 100%;
+  }
+
+  &:hover {
+    .card-picture {
+      width: 160px;
+
+      @include sm {
+        width: 185px;
+      }
+
+      @include md {
+        height: 71.4%;
+        width: 100%;
+      }
+    }
+
+    .card-content {
+      background-color: $card-hover-bg;
+
+      @include md {
+        height: 28.6%;
+      }
+    }
+
+    .card-logo {
+      @include md {
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &-wrapper {
+    @include md {
+      max-width:  485px;
+      width: 100%;
+    }
+
+    @include lg {
+      max-width:  377px;
+    }
+  }
+
+  &-picture {
+    border-right: 1px solid $border-grey;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+    width: 130px;
+
+    @include sm {
+      width: 150px;
+    }
+
+    @include md {
+      border-bottom: 2px solid $border-grey;
+      border-right: none;
+      position: absolute;
+      height: 75%;
+      left: 0;
+      top: 0;
+      transition: height 0.2s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &-logo {
+    left: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include md {
+      left: 15%;
+      top: 16.8%;
+      transform: none;
+      transition: all 0.2s ease-in-out;
+      width: 70%;
+    }
+  }
+
+  &-content {
+    padding: 12px 10px;
+    width: 100%;
+
+    @include sm {
+      padding: 14px 12px;
+    }
+
+    @include md {
+      text-align: center;
+      bottom: 0;
+      height: 25%;
+      left: 0;
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+    }
+  }
+
+  &-name {
+    color: $dark-alt;
+    font-size: 12px;
+    padding-right: 35px;
+    text-transform: uppercase;
+
+    @include xs {
+      font-size: 13px;
+    }
+
+    @include sm {
+      font-size: 14px;
+    }
+
+    @include md {
+      font-size: 16px;
+      padding-right: 0;
+    }
+  }
+
+  &-description {
+    color: $dark-main;
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 36px;
+
+    @include xs {
+      font-size: 13px;
+    }
+
+    @include sm {
+      font-size: 14px;
+    }
+
+    @include md {
+      font-size: 16px;
+    }
+  }
+}
